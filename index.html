@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Music Library</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#library">Library</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero" id="home">
+            <h1>Welcome to Music Library</h1>
+            <p>Enjoy uninterrupted music streaming anytime, anywhere.</p>
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <input type="text" id="input" placeholder="Search for music...">
+                    <div id="suggestion"></div>
+                </div>
+                <div id="dropdown" class="dropdown"></div>
+                <button id="searchButton">Search</button>
+            </div>
+        </section>
+        
+        <section class="library" id="results">
+            <!-- Search results will be injected here by JavaScript -->
+        </section>
+
+        <section class="library" id="library">
+            <h2>Music Library</h2>
+            <div class="album-grid" id="album-grid">
+                <!-- Album items will be injected here by JavaScript -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2024 Music Library. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
